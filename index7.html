@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <style>  
+.navbar {
+    z-index: 999;
+}
+.navbar {
+    position: static;
+    margin-top:0px;
+    padding-top: 0px;
+    background-color: transparent;
+}
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+.index-image{
+    -webkit-transform: translateZ(0);
+    padding-top: 0px 0;
+
+    /*Changed By Naman*/
+    /*top: 34px;*/
+    top: 0px;
+    /*End Changes*/
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin-top: 0px;
+
+}
+.index-image img{
+  position: fixed;
+  /*max-width: none !important;*/
+  max-height: 300px;
+  z-index: -99999;
+}
+footer{
+  background-image: url("8-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+   z-index: -1;
+   background-color: transparent;
+   color: #1a47b0;
+   text-align: center;
+   margin-top: 2em;
+   padding-bottom: 3em;
+}
+
+footer a{
+  color: #1a47b0;
+}
+
+
+html,body,header,
+.view {
+  height: 100%;
+  /*padding-bottom: 215px;*/
+}
+.navbar-brand img{
+  z-index: 9999;
+}
+.container .head-hed{
+  position: absolute;
+  top: 8px;
+}
+.head-hed-para{
+  position:relative;
+}
+#head .container{
+  position: relative;
+  text-align: center;
+}
+
+#head{
+  /*position:absolute;*/
+  top:0px;
+  /*background-image: url("1-1.png");*/
+  /*padding-bottom:3em;*/
+  z-index:-1;
+}
+#welcome{
+  background-image:url("2-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding-bottom:10em;
+  z-index: 99;
+}
+#intro{
+ background-image:url("3-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom:12em;
+  z-index: -1; 
+}
+#sport{
+ background-image:url("4-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom:19em;
+  z-index: -1; 
+}
+#Get-here{
+
+}
+#registration{
+  background-image:url("6-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 4.5em;
+}
+#contact{
+  text-align: center;
+}
+#contact h1{
+  margin-top: 7em;
+  padding-bottom: 3em;
+}
+
+
+
+#Get-here h1{
+  margin-top: 0;
+  text-align: right;
+}
+.sports-images{
+ margin-top: 10em; 
+}
+#intro-para{
+  margin-top: 12em;
+  border: 1px solid;
+  padding-top: 3em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  box-shadow: -30px 30px red;
+  font-family:"Futura";
+  font-size: 18px;
+}
+#welcome-head{
+  margin-top: 3.5em;
+}
+.main-banner-heading{
+  font-size:7em;
+}
+#reg-btn
+{
+  position:absolute;
+  bottom:5%;
+  right:25%;
+  border-radius: 60px;
+
+}
+#reg-btn1
+{
+border: solid white;
+  background-color: Transparent;
+  border-radius: 40px;
+
+}
+#plan1,#plan2,#plan3{
+  border: 1px solid;
+  height: 300px;
+  width: 360px;
+  box-shadow: 40px 40px 80px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#registration h1{
+  margin-top:4em; 
+}
+#registration p{
+  padding-bottom:2em; 
+}
+
+#plan1, #plan2, #plan3, h4{
+margin-top: 2em;
+}
+#gs-btn{
+text-align: center;
+margin-top: 2em;
+}
+#cs-btn{
+margin-top: 2em;
+text-align: center;
+}
+.btn-primary{
+  background-color: #0f3583;
+}
+#ort, #lastname{
+  float: left;
+  padding-left: 0;
+}
+#sm-btn{
+  float: center;
+}
+#email, #message{
+  float: left;
+}
+.module img{
+position: relative;
+height: 421px;
+width: 526px;
+box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.21);
+  z-index: 1;
+}
+.module {
+  margin-top: 15em;
+  width: 526px;
+  height: 421px;
+  position: relative;
+  z-index: 1;
+  
+}
+.module:after {
+  
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 2em;
+  right: -2em;
+  bottom: -3em;
+  border: 2px solid red;
+  background: white;
+  z-index: -1;
+}
+#sport-square {
+  margin-top: 9em;
+  border: 1px solid;
+  padding-top: 3em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  box-shadow: 30px 30px #709be7;
+  font-family:"Futura";
+  font-size: 18px;
+}
+#get-here-square{
+  background-color:  white;
+}
+
+/*.header-top {
+  top:3em;
+  z-index:2;
+  position:fixed;
+}*/
+
+.overlay {
+  top:3em;
+  z-index:2;
+  position:absolute;
+  width:100%;
+}
+
+/*.empty-section 
+{
+  position:absolute;
+}*/
+</style>
+
+
+</head>
+<body>
+<div class="page">
+
+  
+  <section id="head" class= "container-fluid pl-0 pr-0">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="min-width:100% ; z-index: -1;min-height: 100%;">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+  
+      <header>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light navbar-trans static-top">
+        <div class="container">
+        
+          <a class="navbar-brand" href="#">
+                <img src="logo_black.png" alt="logo" style="max-width: 70; height: 70px;">
+              </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">About
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a><button id="reg-btn1" class="btn btn-danger">Register Now</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+        </header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6">
+                <div class="main-banner-heading">
+                  <p>get on board.</p>
+                </div>
+                <div >
+                  <h1>3-6 Novermber, 2019</h1>
+                </div>
+                
+              </div>
+              <div class="col-6">
+              <!-- <img src="1-1.png" class="img-responsive"> -->
+                <button id="reg-btn" class="btn btn-danger">Register Now</button>
+              </div>
+            </div>
+          </div>          
+        </div>
+
+      </div>
+    </div>
+    
+  </section>
+  <section id="welcome" class="container-fluid">
+  <div class=row>
+  <div class="col-lg-6 col-md-6 col-12 d-none d-md-block">
+  <div class="module" style="margin-left: 3em;" >
+  <img src="5.PNG" alt="Italian Trulli">
+  </div>
+  </div>
+    <div class="col-lg-6 col-md-6 col-12">
+        <h1 id="welcome-head" style="text-align: center">Welcome to the<br> 29th MBA Tornament</h1>
+        <p>The HEC MBA Tournament, or MBAT, is an annual sporting event<br>
+          organized by HEC Paris, a leading business school in Europe, that<br>
+          brings together the continent's largest annual gathering of MBA<br>
+          students.<br><br>
+          Over 1500 international future business leaders visit our campus<br>
+          every May for heated competition, friendly rivalries, and<br>
+          passionate celebrations. MBAT consists of sporting competitions,<br>
+          festivities, and cultural exchange - all taking place on the beautiful<br>
+          HEC Paris campus and select venues in the vicinity.
+          </p>
+      </div>
+    
+  </div>
+   
+  
+  </section>
+
+    <section  class="container-fluid">
+  <div class=row>
+    <div class="col-md-6 d-none d-md-block" id="intro">
+         <img class="img-responsive" src="dean-3.png" style="width: 100%; margin-top: 15em;" > 
+    </div>
+    <div class="col-12 d-block d-md-none" id="intro-small">
+         <img class="img-responsive" src="dean-3.png" style="width: 100%; margin-top: 15em;" > 
+    </div>
+    <div class="col-md-5 offset-md-1 col-12 " style="padding-bottom: 1em;"> 
+        <p id="intro-para">The MBAT is always one of the major highlights of the<br>
+          calendar at HEC Paris MBA, and this year is particularly<br>
+          special as we are celebrating its 29th anniversary. But far<br>
+          from being just a sporting event, it’s the biggest gathering<br>
+          of MBA students in Europe.<br><br>
+          The three days of sports, events, and celebrations unite<br>
+          over 1500 participants from around the world, making it an<br>
+          unparalleled opportunity to network, exchange cultures,<br>
+          and foster lifelong connections. The MBAT is a unique<br>
+          event, an opportunity to exercise your teamwork and<br>
+          leadership skills, as well as your sporting prowess. We look<br>
+          forward to your arrival on campus and sharing this <br> fantanstic experience with you.<br>
+      </p>
+      </div>
+    </div>
+    </section>
+
+   
+  
+  <section id="sport" class="container-fluid">
+  <div class=row>
+    <div class="col-lg-5 offset-lg-6 col-md-5 offset-md-6 col-12 ">
+        <p id="sport-square">The MBAT is always one of the major highlights of the<br>
+          calendar at HEC Paris MBA, and this year is particularly<br>
+          special as we are celebrating its 29th anniversary. But far<br>
+          from being just a sporting event, it’s the biggest gathering<br>
+          of MBA students in Europe.<br><br>
+          The three days of sports, events, and celebrations unite<br>
+          over 1500 participants from around the world, making it an<br>
+          unparalleled opportunity to network, exchange cultures,<br>
+          and foster lifelong connections. The MBAT is a unique<br>
+          event, an opportunity to exercise your teamwork and<br>
+          leadership skills, as well as your sporting prowess. We look<br>
+          forward to your arrival on campus and sharing this <br> fantanstic experience with you.<br>
+      </p>
+      </div>
+    </div>
+      <div class="sports-images">
+      <div class="container">
+      <div class="row">
+    <div class="col-md-3 col-lg-3 col-4">
+        <figure>
+        <img src="3.png" alt="sailing" style="width:100%">
+        <figcaption style="text-align: center;">Sailing</figcaption>
+        </figure>
+        <figure>
+        <img src="3.png" alt="sailing" style="width:100%">
+        <figcaption style="text-align: center;">Sailing</figcaption>
+        </figure><figure>
+        <img src="3.png" alt="sailing" style="width:100%">
+        <figcaption style="text-align: center;">Sailing</figcaption>
+        </figure><figure>
+        <img src="3.png" alt="sailing" style="width:100%">
+        <figcaption style="text-align: center;">Sailing</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3 col-4">
+        <figure>
+        <img src="2.png" alt="Ball Something" style="width:100%">
+        <figcaption style="text-align: center;">Ball Something</figcaption>
+        </figure>
+        <figure>
+        <img src="2.png" alt="Ball Something" style="width:100%">
+        <figcaption style="text-align: center;">Ball Something</figcaption>
+        </figure>
+        <figure>
+        <img src="2.png" alt="Ball Something" style="width:100%">
+        <figcaption style="text-align: center;">Ball Something</figcaption>
+        </figure>
+        <figure>
+        <img src="2.png" alt="Ball Something" style="width:100%">
+        <figcaption style="text-align: center;">Ball Something</figcaption>
+        </figure>
+        </div>
+      <div class="col-md-3 col-4">
+        <figure>
+        <img src="1.png" alt="Another Ball Game" style="width:100%">
+        <figcaption style="text-align: center;">Another Ball Game</figcaption>
+        </figure>
+        <figure>
+        <img src="1.png" alt="Another Ball Game" style="width:100%">
+        <figcaption style="text-align: center;">Another Ball Game</figcaption>
+        </figure>
+        <figure>
+        <img src="1.png" alt="Another Ball Game" style="width:100%">
+        <figcaption style="text-align: center;">Another Ball Game</figcaption>
+        </figure>
+        <figure>
+        <img src="1.png" alt="Another Ball Game" style="width:100%">
+        <figcaption style="text-align: center;">Another Ball Game</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-3 d-none d-md-block">
+      <figure>
+        <img src="4.png" alt="Swimming" style="width:100%">
+        <figcaption style="text-align: center;">Swimming</figcaption>
+        </figure>
+        <figure>
+        <img src="4.png" alt="Swimming" style="width:100%">
+        <figcaption style="text-align: center;">Swimming</figcaption>
+        </figure>
+        <figure>
+        <img src="4.png" alt="Swimming" style="width:100%">
+        <figcaption style="text-align: center;">Swimming</figcaption>
+        </figure>
+        <figure>
+        <img src="4.png" alt="Swimming" style="width:100%">
+        <figcaption style="text-align: center;">Swimming</figcaption>
+        </figure>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+      <section id="Get-here-desktop " class="container d-none d-md-block" style="margin:0;">
+  <div class=row>
+    <div class="col-md-3 offset-md-4">
+        <h1 id="gh">Get Here</h1>
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <h1 id="sleep">Sleep</h1>
+      </div>
+      <div class="col-lg-2 col-md-2">
+        <h1 id="eat">Eat</h1>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class=row>
+      <div class="col-md-6 col-12 ">
+      <img class="img-responsive" src="5-1.png" style="width: 100%; margin-top: 5.2em;" >
+      </div>
+      <div class="col-md-6 col-12 ">
+       <h1 style="text-align: left;margin-top: 2em;">Center of the University</h1>
+       <p>Jouy en Josas is the easiest place to get to. Just take<br>
+a plane to Paris or a boat to Milan.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.</p> 
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <section id="get-here-small " class="container col-12 d-block d-md-none" style="padding-left: 0;padding-right: 0; background-color: blue;margin-top: 0; margin-right: 0; margin-left: 0;padding-top: 5em;padding-bottom: 0;">
+    <div class="Get-here-small" id="get-here-square" style="margin-left: 5em; padding-bottom: 0;margin-bottom: 0;">
+        <h1 id="gh">Get Here</h1>
+        <p>Jouy en Josas is the easiest place to get to. Just take<br>
+a plane to Paris or a boat to Milan.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.</p>
+</div>
+    <div class="container-fluid" style="margin-top: 0;padding: 0;">
+      <img class="img-responsive" src="5-1.png" style="width: 100%; size: cover;" >
+      </div>
+    </section>
+    <section id="eat-small " class="container col-12 d-block d-md-none" style="padding-left: 0;padding-right: 0; background-color: blue;margin-top: 0; margin-right: 0; margin-left: 0;padding-top: 5em;padding-bottom: 0;">
+    <div class="Get-here-small" id="get-here-square" style="margin-left: 5em; padding-bottom: 0;margin-bottom: 0;">
+        <h1 id="gh">Eat</h1>
+        <p>Jouy en Josas is the easiest place to get to. Just take<br>
+a plane to Paris or a boat to Milan.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.</p>
+</div>
+    <div class="container-fluid" style="margin-top: 0;padding: 0;">
+      <img class="img-responsive" src="5-1.png" style="width: 100%; size: cover;" >
+      </div>
+    </section> 
+    
+        <section id="sleep-small " class="container col-12 d-block d-md-none" style="padding-left: 0;padding-right: 0; background-color: blue;margin-top: 0; margin-right: 0; margin-left: 0;padding-top: 5em;padding-bottom: 0;">
+    <div class="Get-here-small" id="get-here-square" style="margin-left: 5em; padding-bottom: 0;margin-bottom: 0;">
+        <h1 id="gh">Sleep</h1>
+        <p>Jouy en Josas is the easiest place to get to. Just take<br>
+a plane to Paris or a boat to Milan.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.<br><br>
+Bu Plane:<br>
+Take a flight to Orly Airport. From there a million train<br>
+and 2 hours and you are there.</p>
+</div>
+    <div class="container-fluid" style="margin-top: 0;padding: 0;">
+      <img class="img-responsive" src="5-1.png" style="width: 100%; size: cover;" >
+      </div>
+    </section> 
+  <section id="registration" class="container-fluid  d-none d-md-block" style="margin:0;">
+  <h1 id="regis-head">Registration</h1>
+  <p>Why not register today or something smart like that? Why not<br>
+     register today or something smart like that? Why not register<br>
+     today or something smart like that</p>
+     <div class="container">
+     <div class="row">
+       <div class="col-lg-4 col-md-4 col-12">
+         <div id="plan1">
+         <h4>€399</h4>
+         <h5>Early Bird</h5>
+         <p>Valid till 08 Feb, 2019</p>
+         <button id="gs-btn" class="btn btn-danger">Get Started></button>
+         </div>
+
+       </div>
+       <div class="col-lg-4 col-md-4 col-12">
+         <div id="plan2">
+         <h4>€425</h4>
+         <h5>Standard</h5>
+         <p>Valid till 08 Feb, 2019</p>
+         <button id="cs-btn" class="btn btn-primary">Coming soon</button>
+         </div>
+         
+       </div>
+       <div class="col-lg-4 col-md-4 col-12">
+         <div id="plan3">
+         <h4>€399</h4>
+         <h5>Latepackage</h5>
+         <p>Strats from 08 Mar, 2019</p>
+         <button id="cs-btn" class="btn btn-primary">Coming soon</button>
+         </div>
+         </div>
+       </div>
+     </div>
+  </section>
+ <section id="contact" class="container-fluid">
+  <div class=row>
+  <div class="col-md-6 d-none d-md-block">
+  <div class="module" style="margin-left: 3em;" >
+  <img src="7-1.png" alt="Italian Trulli">
+  </div>
+  </div>
+    <div class="col-md-6 col-sm-12">
+        <h1 id="contact-head">Get In Touch</h1>
+        <div class="container d-none d-md-block">
+        <div class="row">
+          <div class="col-md-6" style="padding-left: 0;">
+          <input type="text" id="ort" placeholder="Ort" autocomplete="off">
+          </div>
+          <div class="col-md-6" style="padding-left: 0;">
+          <input type="text" id="lastname" placeholder="LastName" autocomplete="off" style="float: right;">
+          </div>
+          <input type="text" id="email" placeholder="Email Address" autocomplete="off" style="margin-top: 1em;">
+          <textarea class="form-control" rows="5" id="message" placeholder="Message" style="margin-top: 1em;"></textarea>
+          <button id="sm-btn" class="btn btn-danger" style="margin-top: 1em; margin-left: 40%;">Send Message</button>
+          </div>
+          </div>
+          <div class="container d-block d-md-none">
+
+          <input class="col-12" type="text" id="ort" placeholder="Ort" autocomplete="off">
+          <input class="col-12" type="text" id="lastname" placeholder="LastName" autocomplete="off" style="margin-top: 1em;">
+          <input class="col-12" type="text" id="email" placeholder="Email Address" autocomplete="off" style="margin-top: 1em;">
+          <textarea class="form-control col-12" rows="5" id="message" placeholder="Message" style="margin-top: 1em;"></textarea>
+          <button id="sm-btn" class="btn btn-danger col-12" style="margin-top: 1em;">Send Message</button>
+          </div>
+          </div>
+          </div>
+
+      
+    
+  </div>
+   
+  
+  </section>
+
+
+  <footer class="page-footer font-small indigo"> 
+
+
+    <!-- Footer Links -->
+    <footer>
+    <div id="footer" class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+     
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">The Dean</a>
+            </li>
+            <li>
+              <a href="#!">The Team</a>
+            </li>
+            <li>
+              <a href="#!">Registration</a>
+            </li>
+            <li>
+              <a href="#!">Contact us</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Schedule</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Social Events</a>
+            </li>
+            <li>
+              <a href="#!">Sport Events</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Plan</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Get here</a>
+            </li>
+            <li>
+              <a href="#!">Eat</a>
+            </li>
+            <li>
+              <a href="#!">Sleep</a>
+            </li>
+            <li>
+              <a href="#!">Drink</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Shop</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Help</a>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+
+          <!-- Links -->
+          <br>
+          <img src="logo_black.png" alt="logo" style="width:70px;height:70px;">
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    
+    <!-- Footer Links -->
+  </footer>
+  
+  </div>
+  </body>
+</html>
