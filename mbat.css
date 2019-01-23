@@ -157,6 +157,7 @@ html,body,header,
  .list-unstyled li {
     display: inline;
     padding: 1em;
+    padding-left: 0;
   }
   footer {
     background-image: url(8-1.png);
@@ -208,6 +209,7 @@ figcaption{
   .list-unstyled li {
     display: inline;
     padding: 1em;
+    padding-left: 0;
   }
   .Get-here-small p{
     margin-bottom:0em;
@@ -299,6 +301,7 @@ padding-left: 0;padding-right: 0; background-color: blue;margin-top: 0; margin-r
   .list-unstyled li {
     display: inline;
     padding: 1em;
+    padding-left: 0;
   }
      .Get-here-small p{
     margin-bottom:0em;
