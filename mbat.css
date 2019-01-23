@@ -42,7 +42,7 @@ footer{
   background-image: url("8-1.png");
   background-size: cover;
   background-repeat: no-repeat;
-
+  max-width: 100%;
    z-index: -1;
    background-color: transparent;
    color: #1a47b0;
@@ -166,7 +166,33 @@ html,body,header,
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
+    max-width: 100%;
   }
+  #intrp{
+    margin-left: 0;
+    background-color: #fa2b56;
+    padding-right: 0;
+    padding-left: 5em;
+    padding-bottom: 0em;
+  }
+  #intro-para{
+  margin-top: 5em;
+  border: 1px solid #fa2b56;
+  padding-top: 3em;
+  padding-right: 0em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  font-family:"Futura";
+  font-size: 18px;
+  margin-right: 0em;
+  background-color: white;
+}
+#intro-para p{
+  padding-bottom: 0em;
+}
+#introduction{
+padding-left: 0;padding-right: 0; background-color: blue;margin-top: 0; margin-right: 0; margin-left: 0;padding-top: 5em;padding-bottom: 0;
+}
   
 }
 figcaption{
@@ -175,6 +201,10 @@ figcaption{
 @media only screen and (min-width:768px) and (max-width:991px) {
   figure {
     padding:0em 2em;
+  }
+  .list-unstyled li {
+    display: inline;
+    padding: 1em;
   }
   .Get-here-small p{
     margin-bottom:0em;
@@ -195,6 +225,31 @@ figcaption{
     font-family:"Futura";
     font-size: 18px;
   }
+  #intrp{
+    margin-left: 0;
+    background-color: #fa2b56;
+    padding-right: 0;
+    padding-left: 5em;
+    padding-bottom: 0em;
+  }
+  #intro-para{
+  margin-top: 5em;
+  border: 1px solid #fa2b56;
+  padding-top: 3em;
+  padding-right: 0em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  font-family:"Futura";
+  font-size: 18px;
+  margin-right: 0em;
+  background-color: white;
+}
+#intro-para p{
+  padding-bottom: 0em;
+}
+#introduction{
+padding-left: 0;padding-right: 0; background-color: blue;margin-top: 0; margin-right: 0; margin-left: 0;padding-top: 5em;padding-bottom: 0;
+}
 
 }
 @media only screen and (min-width:992px) {
