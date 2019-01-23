@@ -1,0 +1,417 @@
+.navbar {
+    z-index: 999;
+    color: white;
+}
+.navbar {
+    position: static;
+    margin-top:0px;
+    padding-top: 0px;
+    background-color: transparent;
+    color: white;
+}
+.top-nav-collapse {
+    background-color: #4285F4;
+    color: white;
+}
+/*@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}*/
+.index-image{
+    -webkit-transform: translateZ(0);
+    padding-top: 0px 0;
+
+    /*Changed By Naman*/
+    /*top: 34px;*/
+    top: 0px;
+    /*End Changes*/
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin-top: 0px;
+
+}
+.index-image img{
+  position: fixed;
+  /*max-width: none !important;*/
+  max-height: 300px;
+  z-index: -99999;
+}
+footer{
+  background-image: url("8-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+   z-index: -1;
+   background-color: transparent;
+   color: #1a47b0;
+   text-align: center;
+   margin-top: 2em;
+   padding-bottom: 3em;
+}
+
+footer a{
+  color: #1a47b0;
+}
+
+
+html,body,header,
+.view {
+  height: 100%;
+  /*padding-bottom: 215px;*/
+}
+.navbar-brand img{
+  z-index: 9999;
+}
+.container .head-hed{
+  position: absolute;
+  top: 8px;
+}
+.head-hed-para{
+  position:relative;
+}
+#head .container{
+  position: relative;
+  text-align: center;
+}
+
+#head{
+  /*position:absolute;*/
+  top:0px;
+  /*background-image: url("1-1.png");*/
+  /*padding-bottom:3em;*/
+  z-index:-1;
+}
+
+#welcome{
+  padding-bottom:10em;
+  z-index: 99;
+}
+#welcome p{
+  padding-left:3%;
+}
+#intro{
+ background-image:url("3-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom:12em;
+  z-index: -1; 
+}
+#sport{
+ background-image:url("4-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom:19em;
+  z-index: -1; 
+}
+#Get-here{
+
+}
+#registration{
+  background-image:url("6-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 4.5em;
+}
+#contact{
+  text-align: center;
+}
+#contact h1{
+  margin-top: 7em;
+  padding-bottom: 3em;
+}
+
+
+
+#Get-here h1{
+  margin-top: 0;
+  text-align: right;
+}
+.sports-images{
+ margin-top: 10em; 
+}
+
+#welcome-head{
+  margin-top: 3.5em;
+}
+.main-banner-heading{
+  font-size:7em;
+}
+#reg-btn
+{
+  position:absolute;
+  /*bottom:5%;*/
+  right:25%;
+  border-radius: 60px;
+
+}
+#intro-para{
+  margin-bottom: 0;
+}
+@media only screen and (max-width:991px) {
+  .main-banner-heading{
+    font-size:3em;
+  }
+
+  footer {
+    background-image: url(8-1.png);
+    z-index: -1;
+    background-color: transparent;
+    color: #1a47b0;
+    text-align: center;
+    margin-top: 2em;
+    padding-bottom: 3em;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+}
+figcaption{
+  font-size:0.8em;
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+  figure {
+    padding:0em 2em;
+  }
+  .Get-here-small p{
+    margin-bottom:0em;
+  }
+  #welcome{
+    background-image:url("Welcome.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #welcome-para {
+    margin-top: 2em;
+    border: 1px solid #fa2b56;
+    padding-top: 3em;
+    padding-right: 2em;
+    padding-bottom: 3em;
+    padding-left: 2em;
+    box-shadow: -30px 30px #0f358e;
+    font-family:"Futura";
+    font-size: 18px;
+  }
+
+}
+@media only screen and (min-width:992px) {
+  figure {
+    padding:4em;
+  }
+  #welcome{
+    background-image:url("Welcome.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #intro-para{
+  margin-top: 12em;
+  border: 1px solid;
+  padding-top: 3em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  box-shadow: -30px 30px #fa2b56;
+  font-family:"Futura";
+  font-size: 18px;
+  margin-right: 1em;
+}
+#intrp{
+  padding-bottom: 1em;
+}
+
+}
+@media only screen and (max-width:767px) {
+#welcome-para {
+  margin-top: 2em;
+  border: 1px solid #fa2b56;
+  padding-top: 3em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  box-shadow: -30px 30px #0f358e;
+  font-family:"Futura";
+  font-size: 18px;
+}
+  .Get-here-small p{
+    margin-bottom:0em;
+  }
+  .list-unstyled li {
+    display: inline;
+    padding: 1em;
+  }
+     .Get-here-small p{
+    margin-bottom:0em;
+  }
+  #intrp{
+    margin-left: 0;
+    background-color: #fa2b56;
+    padding-right: 0;
+    padding-left: 5em;
+    padding-bottom: 0em;
+  }
+  #intro-para{
+  margin-top: 5em;
+  border: 1px solid #fa2b56;
+  padding-top: 3em;
+  padding-right: 0em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  font-family:"Futura";
+  font-size: 18px;
+  margin-right: 0em;
+  background-color: white;
+}
+#intro-para p{
+  padding-bottom: 0em;
+}
+#introduction{
+padding-left: 0;padding-right: 0; background-color: blue;margin-top: 0; margin-right: 0; margin-left: 0;padding-top: 5em;padding-bottom: 0;
+}
+
+}
+@media only screen and (min-width:768px) {
+  #reg-btn
+  {
+    position:absolute;
+    bottom:5%;
+    right:25%;
+    border-radius: 60px;
+
+  }
+ 
+
+} 
+.active-heading{
+  font-weight:bold;
+  color:darkblue;
+  text-decoration:underline;
+}
+#reg-btn1
+{
+border: solid white;
+  background-color: Transparent;
+  border-radius: 40px;
+
+}
+#plan2,#plan3{
+  border: 1px solid;
+  height: 300px;
+  /*width: 360px;*/
+  box-shadow: 40px 40px 80px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#plan1{
+  border: 1px solid white;
+  height: 300px;
+  /*width: 360px;*/
+  box-shadow: 40px 40px 80px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+#regis-head{
+  margin-top:4em; 
+}
+#registration p{
+  padding-bottom:2em; 
+}
+
+#plan1, #plan2, #plan3, h1{
+margin-top: 1.5em;
+}
+#gs-btn{ 
+text-align: center;
+margin-top: 1.5em;
+//box-shadow: 40px 40px 80px 0px #000000;
+}
+#cs-btn{
+margin-top: 1.5em;
+text-align: center;
+//box-shadow: 40px 40px 80px 0px #000000;
+}
+.btn-primary{
+  background-color: #0f3583;
+}
+#ort, #lastname{
+  float: left;
+  padding-left: 0;
+}
+#sm-btn{
+  float: center;
+}
+#email, #message{
+  float: left;
+}
+.module img{
+position: relative;
+box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.21);
+  z-index: 1;
+}
+.module {
+  margin-top: 15em;
+  position: relative;
+  z-index: 1;
+  
+}
+.module:after {
+  
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 2em;
+  right: -2em;
+  bottom: -3em;
+  border: 2px solid #fa2b56;
+  background: white;
+  z-index: -1;
+}
+#sport-square {
+  margin-top: 9em;
+  border: 1px solid;
+  padding-top: 3em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  box-shadow: 30px 30px #709be7;
+  font-family:"Futura";
+  font-size: 18px;
+}
+#get-here-square{
+  background-color:  white;
+}
+
+/*.header-top {
+  top:3em;
+  z-index:2;
+  position:fixed;
+}*/
+.nav-link{
+color: white !important;
+}
+.overlay {
+  top:3em;
+  z-index:2;
+  position:absolute;
+  width:100%;
+}
+
+/*.empty-section 
+{
+  position:absolute;
+}*/
+#head-video{
+  min-width:100% ;
+   z-index: -1;
+    min-height: 100%;
+
+}
+p{
+  color: #595f6f;
+}
+h1, h3{
+  color: #0f358e;
+}
+h5{
+  color: #1a47b0;
+}
