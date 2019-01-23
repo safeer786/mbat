@@ -154,7 +154,10 @@ html,body,header,
   .main-banner-heading{
     font-size:3em;
   }
-
+ .list-unstyled li {
+    display: inline;
+    padding: 1em;
+  }
   footer {
     background-image: url(8-1.png);
     z-index: -1;
